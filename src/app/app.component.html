@@ -1,0 +1,43 @@
+<div class="block1">
+    <div class="block1__block2">
+        <p class="block1__block2__elem block1__block2__elem_bold">
+            AAA
+        </p>
+    </div>
+</div>
+
+<div class="blockXXX">
+    <div class="block1__block2">
+        <p class="block1__block2__elem block1__block2__elem_bold">BBB</p>
+    </div>
+</div>
+
+
+<!--<div class="block1">-->
+<!--    <div class="block1__block2">-->
+<!--        <p class="block1__block2__elem block1__block2__elem_bold">-->
+<!--            AAA-->
+<!--        </p>-->
+<!--    </div>-->
+<!--</div>-->
+
+
+<div class="class1 class1_bold">
+    <p>123</p>
+</div>
+<div class="class1_bold">
+    <p>123</p>
+</div>
+
+<div>
+    <app-cell [numObj]="numObj" [numObj$]="takeObj()"></app-cell>
+    <!--    <app-cell2 [obj]="obj"></app-cell2>-->
+    <button (click)="add()">add</button>
+    <button (click)="add2()">add2</button>
+    <p>{{numObj.num}}</p>
+</div>
+
+<div>
+    <p>{{editorValue}}</p>
+    <app-editor [(ngModel)]="editorValue"></app-editor>
+</div>

@@ -1,0 +1,10 @@
+<ng-container *ngIf="formGroup">
+    <div class="cell" [formGroup]="formGroup">
+        <p>{{num}}</p>
+        <p>numObj.num: {{numObj?.num}}</p>
+        <p>numObj$.num: {{(numObj$ | async)?.num}}</p>
+        <input formControlName="text">
+        <button (click)="click()">кнопка внутри</button>
+        <app-cell2></app-cell2>
+    </div>
+</ng-container>
